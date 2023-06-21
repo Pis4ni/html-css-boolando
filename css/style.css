@@ -70,6 +70,9 @@ body{
     left: 0;
     right: 0;
 }
+.col{
+    width: 30%;
+}
 
 /*! ROOT */
 :root{
