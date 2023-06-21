@@ -26,7 +26,7 @@ body{
     height: 1rem;
 }
 .th2{
-    height: 500px;
+    height: 600px;
 }
 .tw0{
     width: 100px;
@@ -179,13 +179,13 @@ body{
     display: inline;
 }
 
-header ul li{
+header ul li, footer ul li{
     list-style-type:none;
     display: inline-block;
-    padding: .5rem;
+    padding: .5rem 0;
 }
 
-header a{
+header a, footer a{
     text-decoration: none;
     text-transform: capitalize;
     font-size: 1.1rem;
@@ -208,4 +208,17 @@ header a{
 }
 .hide:hover{
     z-index: 0;
+}
+.small>li a{
+    font-size: .8rem;
+}
+.findus{
+    color: var(--text-color-light);
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.findus li a{
+    font-size: 2rem;
 }
