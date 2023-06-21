@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+body{
+    padding-top: var(--header-height);
+}
+
+main{
+    padding: 1rem 0;
+}
+
 /*! DEBUG */
 body{
     background-color: #aaaaaa;
@@ -16,9 +24,18 @@ body{
     height: 1rem;
 }
 .th1{
-    height: 3rem;
+    height: var(--header-height);
+}
+.th2{
+    height: 500px;
+}
+.tw0{
+    width: 100px;
 }
 .tw1{
+    width: 200px;
+}
+.tw2{
     width: 300px;
 }
 
@@ -31,6 +48,12 @@ body{
 .flex{
     display: flex;
 }
+.wrap{
+    flex-wrap: wrap;
+}
+.gap{
+    gap: 2rem;
+}
 .xcenter{
     justify-content: center;
 }
@@ -41,4 +64,56 @@ body{
     justify-content: space-between;
 }
 
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 /*! ROOT */
+:root{
+    --header-height:50px
+}
+
+/*! SPECIFIC */
+.card{
+    position: relative;
+    width: calc((100%/3) - 2rem);
+}
+.card-img{
+    position: relative;
+}
+.card-img>img{
+    width: 100%;
+}
+.card-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 85%;
+    background-color: #ffffff;
+}
+.wish{
+    position: absolute;
+    background-color:#ffffff ;
+    padding:  .1rem .5rem;
+    font-size: 1.5rem;
+    top: 5px;
+    right: -5px;
+}
+.discount{
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 80%;
+    top: 75%
+}
+.special{
+    position: absolute;
+    bottom: 20%;
+    left: 22%;
+    right: 50%;
+    top: 75%
+}
