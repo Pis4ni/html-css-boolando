@@ -6,6 +6,7 @@
 
 body{
     padding-top: var(--header-height);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -77,6 +78,10 @@ body{
 .col{
     width: 30%;
 }
+.block{
+    display: block;
+}
+
 
 /*! ROOT */
 :root{
@@ -96,10 +101,13 @@ body{
     width: calc((100% - 4rem) / 3);
 }
 .card-img{
-    position: relative;
+    position: relative ;
 }
 .card-img>img{
     width: 100%;
+    position: absolute ;
+    top: 0;
+    left: 0;
 }
 .card-content{
     position: absolute;
@@ -108,6 +116,9 @@ body{
     right: 0;
     top: 85%;
     background-color: #ffffff;
+}
+.card-content>span{
+    margin: .2rem 0;
 }
 .wish{
     position: absolute;
@@ -119,17 +130,51 @@ body{
 }
 .discount{
     position: absolute;
-    bottom: 20%;
     left: 0;
     right: 80%;
-    top: 75%
+    top: 75%;
+    background-color: var(--discount-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: .3rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    font-size: .8rem;
+    
 }
 .special{
     position: absolute;
-    bottom: 20%;
     left: 22%;
-    right: 50%;
-    top: 75%
+    top: 75%;
+    background-color: var(--special-color);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: .3rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    font-size: .8rem;
+    text-transform: capitalize;
+}
+.brand{
+    color: #6e6e6e;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.article-name{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.price{
+    color: var(--discount-color);
+    font-weight: 600;
+    font-size: .8rem;
+}
+.old-price{
+    color: #6e6e6e;
+    font-weight: 600;
+    font-size: .8rem;
+    text-decoration: line-through;
+    display: inline;
 }
 
 header ul li{
@@ -151,4 +196,14 @@ header a{
 }
 .icons>a{
     padding:.5rem
+}
+
+.first:hover{
+    z-index: -1; 
+}
+.hide{
+    z-index: -1;
+}
+.hide:hover{
+    z-index: 0;
 }
