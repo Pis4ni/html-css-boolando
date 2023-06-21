@@ -12,22 +12,21 @@ body {
 main {
 	padding: var(--main-spacing);
 }
+header{
+    background-color: var(--main-color);
+}
+footer{
+    background-color: var(--dark-bg);
+    padding: 1.5rem 0;
+}
 
 /*! DEBUG */
-body {
-	background-color: #aaaaaa;
-}
+
 
 .deb {
 	border: 1px solid red;
 }
 
-.tw1 {
-	width: 200px;
-}
-.tw2 {
-	width: 300px;
-}
 
 /*! UTILS */
 .h1 {
@@ -80,7 +79,7 @@ body {
 	--main-color: #ff6900;
 	--discount-color: #ff0000;
 	--special-color: #008000;
-	--dark-bg: #008000;
+	--dark-bg: #1a1a1a;
 
 	--main-spacing:6rem ;
     --logo-size:300px
