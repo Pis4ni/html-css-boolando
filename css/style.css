@@ -82,7 +82,7 @@ body{
 /*! SPECIFIC */
 .card{
     position: relative;
-    width: calc((100%/3) - 2rem);
+    width: calc((100% - 4rem) / 3);
 }
 .card-img{
     position: relative;
@@ -119,4 +119,7 @@ body{
     left: 22%;
     right: 50%;
     top: 75%
+}
+.central{
+    margin:0 2rem;
 }
