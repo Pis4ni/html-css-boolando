@@ -4,3 +4,41 @@
     padding: 0;
 }
 
+/*! DEBUG */
+body{
+    background-color: #aaaaaa;
+}
+
+.deb{
+    border: 1px solid red;
+}
+.th0{
+    height: 1rem;
+}
+.th1{
+    height: 3rem;
+}
+.tw1{
+    width: 300px;
+}
+
+/*! UTILS */
+.container{
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex{
+    display: flex;
+}
+.xcenter{
+    justify-content: center;
+}
+.ycenter{
+    align-items: center;
+}
+.between{
+    justify-content: space-between;
+}
+
+/*! ROOT */
