@@ -12,21 +12,19 @@ body {
 main {
 	padding: var(--main-spacing);
 }
-header{
-    background-color: var(--main-color);
+header {
+	background-color: var(--main-color);
 }
-footer{
-    background-color: var(--dark-bg);
-    padding: 1.5rem 0;
+footer {
+	background-color: var(--dark-bg);
+	padding: 1.5rem 0;
 }
 
 /*! DEBUG */
 
-
 .deb {
 	border: 1px solid red;
 }
-
 
 /*! UTILS */
 .h1 {
@@ -81,8 +79,8 @@ footer{
 	--special-color: #008000;
 	--dark-bg: #1a1a1a;
 
-	--main-spacing:6rem ;
-    --logo-size:300px
+	--main-spacing: 6rem;
+	--logo-size: 300px;
 }
 
 /*! SPECIFIC */
@@ -193,8 +191,8 @@ footer a {
 	position: relative;
 	right: 50px;
 }
-.logo-cont{
-    width: var(--logo-size);
+.logo-cont {
+	width: var(--logo-size);
 }
 .icons > a {
 	padding: 0.5rem;
