@@ -12,6 +12,7 @@ main{
     padding: var(--main-spacing);
 }
 
+
 /*! DEBUG */
 body{
     background-color: #aaaaaa;
@@ -62,6 +63,9 @@ body{
 }
 .between{
     justify-content: space-between;
+}
+.end{
+    justify-content: flex-end;
 }
 
 .fixed{
@@ -126,4 +130,25 @@ body{
     left: 22%;
     right: 50%;
     top: 75%
+}
+
+header ul li{
+    list-style-type:none;
+    display: inline-block;
+    padding: .5rem;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: var(--text-color-light);
+}
+.logo{
+    width: 100%;
+    position: relative;
+    right: 50px;
+}
+.icons>a{
+    padding:.5rem
 }
