@@ -74,6 +74,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 3;
 }
 .col{
     width: 30%;
@@ -159,6 +160,7 @@ body{
     color: #6e6e6e;
     font-size: .8rem;
     font-weight: 600;
+    text-transform: capitalize;
 }
 .article-name{
     text-transform: uppercase;
