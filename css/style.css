@@ -1,224 +1,222 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-body{
-    padding-top: var(--header-height);
-    font-family: Arial, Helvetica, sans-serif;
+body {
+	padding-top: var(--header-height);
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
-    padding: var(--main-spacing);
+main {
+	padding: var(--main-spacing);
 }
-
 
 /*! DEBUG */
-body{
-    background-color: #aaaaaa;
+body {
+	background-color: #aaaaaa;
 }
 
-.deb{
-    border: 1px solid red;
+.deb {
+	border: 1px solid red;
 }
-.th0{
-    height: 1rem;
+
+.tw1 {
+	width: 200px;
 }
-.th2{
-    height: 600px;
-}
-.tw0{
-    width: 100px;
-}
-.tw1{
-    width: 200px;
-}
-.tw2{
-    width: 300px;
+.tw2 {
+	width: 300px;
 }
 
 /*! UTILS */
-.h1{
-    height: var(--header-height);
+.h1 {
+	height: var(--header-height);
 }
-.container{
-    max-width: 1180px;
-    margin-left: auto;
-    margin-right: auto;
+.container {
+	max-width: 1180px;
+	margin-left: auto;
+	margin-right: auto;
 }
-.flex{
-    display: flex;
+.flex {
+	display: flex;
 }
-.wrap{
-    flex-wrap: wrap;
+.wrap {
+	flex-wrap: wrap;
 }
-.gap{
-    gap: 2rem;
+.gap {
+	gap: 2rem;
 }
-.xcenter{
-    justify-content: center;
+.xcenter {
+	justify-content: center;
 }
-.ycenter{
-    align-items: center;
+.ycenter {
+	align-items: center;
 }
-.between{
-    justify-content: space-between;
+.between {
+	justify-content: space-between;
 }
-.end{
-    justify-content: flex-end;
-}
-
-.fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-}
-.col{
-    width: 30%;
-}
-.block{
-    display: block;
+.end {
+	justify-content: flex-end;
 }
 
+.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+.col {
+	width: 30%;
+}
+.block {
+	display: block;
+}
 
 /*! ROOT */
-:root{
-    --header-height:50px;
-    --text-color-light:#fffdfb;
-    --main-color:#ff6900;
-    --discount-color:#ff0000;
-    --special-color:#008000;
-    --dark-bg:#008000;
+:root {
+	--text-color-light: #fffdfb;
+	--main-color: #ff6900;
+	--discount-color: #ff0000;
+	--special-color: #008000;
+	--dark-bg: #008000;
 
-    --main-spacing:3rem
+	--main-spacing:6rem ;
+    --logo-size:300px
 }
 
 /*! SPECIFIC */
-.card{
-    position: relative;
-    width: calc((100% - 4rem) / 3);
+.card {
+	position: relative;
+	width: calc((100% - 4rem) / 3);
 }
-.card-img{
-    position: relative ;
-}
-.card-img>img{
-    width: 100%;
-    position: absolute ;
-    top: 0;
-    left: 0;
-}
-.card-content{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 85%;
-    background-color: #ffffff;
-}
-.card-content>span{
-    margin: .2rem 0;
-}
-.wish{
-    position: absolute;
-    background-color:#ffffff ;
-    padding:  .1rem .5rem;
-    font-size: 1.5rem;
-    top: 5px;
-    right: -5px;
-}
-.discount{
-    position: absolute;
-    left: 0;
-    right: 80%;
-    top: 75%;
-    background-color: var(--discount-color);
-    color: var(--text-color-light);
-    text-align: center;
-    padding: .3rem;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    font-size: .8rem;
-    
-}
-.special{
-    position: absolute;
-    left: 22%;
-    top: 75%;
-    background-color: var(--special-color);
-    color: var(--text-color-light);
-    text-align: center;
-    padding: .3rem;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    font-size: .8rem;
-    text-transform: capitalize;
-}
-.brand{
-    color: #6e6e6e;
-    font-size: .8rem;
-    font-weight: 600;
-    text-transform: capitalize;
-}
-.article-name{
-    text-transform: uppercase;
-    font-weight: 600;
-}
-.price{
-    color: var(--discount-color);
-    font-weight: 600;
-    font-size: .8rem;
-}
-.old-price{
-    color: #6e6e6e;
-    font-weight: 600;
-    font-size: .8rem;
-    text-decoration: line-through;
-    display: inline;
+.card-img {
+	position: relative;
 }
 
-header ul li, footer ul li{
-    list-style-type:none;
-    display: inline-block;
-    padding: .5rem 0;
+.first {
+	width: 100%;
+	position: absolute;
+}
+.first:hover {
+	z-index: -1;
+}
+.hide {
+	z-index: -1;
+	width: 100%;
 }
 
-header a, footer a{
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 1.1rem;
-    color: var(--text-color-light);
+.card-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ffffff;
 }
-.logo{
-    width: 100%;
-    position: relative;
-    right: 50px;
+.card-content > span {
+	margin: 0.2rem 0;
 }
-.icons>a{
-    padding:.5rem
+.wish {
+	position: absolute;
+	background-color: #ffffff;
+	padding: 0.1rem 0.5rem;
+	font-size: 1.5rem;
+	top: 5px;
+	right: -5px;
+}
+.discount {
+	position: absolute;
+	left: 0;
+	right: 80%;
+	bottom: 20%;
+	background-color: var(--discount-color);
+	color: var(--text-color-light);
+	text-align: center;
+	padding: 0.3rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	font-size: 0.8rem;
+}
+.special {
+	position: absolute;
+	left: 22%;
+	bottom: 20%;
+	background-color: var(--special-color);
+	color: var(--text-color-light);
+	text-align: center;
+	padding: 0.3rem;
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+	font-size: 0.8rem;
+	text-transform: capitalize;
+}
+.brand {
+	color: #6e6e6e;
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.article-name {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+.price {
+	color: var(--discount-color);
+	font-weight: 600;
+	font-size: 0.8rem;
+}
+.old-price {
+	color: #6e6e6e;
+	font-weight: 600;
+	font-size: 0.8rem;
+	text-decoration: line-through;
+	display: inline;
 }
 
-.first:hover{
-    z-index: -1; 
-}
-.hide{
-    z-index: -1;
-}
-.hide:hover{
-    z-index: 0;
-}
-.small>li a{
-    font-size: .8rem;
-}
-.findus{
-    color: var(--text-color-light);
-    text-align: center;
-    font-size: .8rem;
-    font-weight: 600;
+header ul li,
+footer ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0.5rem 0;
 }
 
-.findus li a{
-    font-size: 2rem;
+header a,
+footer a {
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 1.1rem;
+	color: var(--text-color-light);
+}
+.logo {
+	width: 100%;
+	position: relative;
+	right: 50px;
+}
+.logo-cont{
+    width: var(--logo-size);
+}
+.icons > a {
+	padding: 0.5rem;
+}
+
+.hide:hover {
+	z-index: 0;
+}
+.small > li a {
+	font-size: 0.8rem;
+}
+.findus {
+	color: var(--text-color-light);
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.findus li a {
+	font-size: 1.8rem;
+}
+.alone {
+	left: 0;
 }
