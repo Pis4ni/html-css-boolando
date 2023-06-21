@@ -9,7 +9,7 @@ body{
 }
 
 main{
-    padding: 1rem 0;
+    padding: var(--main-spacing);
 }
 
 /*! DEBUG */
@@ -22,9 +22,6 @@ body{
 }
 .th0{
     height: 1rem;
-}
-.th1{
-    height: var(--header-height);
 }
 .th2{
     height: 500px;
@@ -40,6 +37,9 @@ body{
 }
 
 /*! UTILS */
+.h1{
+    height: var(--header-height);
+}
 .container{
     max-width: 1180px;
     margin-left: auto;
@@ -76,7 +76,14 @@ body{
 
 /*! ROOT */
 :root{
-    --header-height:50px
+    --header-height:50px;
+    --text-color-light:#fffdfb;
+    --main-color:#ff6900;
+    --discount-color:#ff0000;
+    --special-color:#008000;
+    --dark-bg:#008000;
+
+    --main-spacing:3rem
 }
 
 /*! SPECIFIC */
@@ -119,7 +126,4 @@ body{
     left: 22%;
     right: 50%;
     top: 75%
-}
-.central{
-    margin:0 2rem;
 }
